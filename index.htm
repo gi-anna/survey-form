@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="ut-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formula One Survey Form</title>
+  </head>
+  <body>
+    <h1 id='title'>Formula One Survey</h1>
+    <p id='description'>For new and old Formula One fans</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label'>
+          Enter your name<input id='name' type='text' placeholder=' Max  Verstappen' required/></label>
+        <label id='email-label'>
+          Enter your email<input id='email' type='email' placeholder=' captain33@gmail.com' required/></label>
+        <label id='number-label'>
+          Age (optional)<input id='number' type='number' min='13' max='120' placeholder=' Must be at least 13'/> </label>
+      </fieldset>
+      <fieldset>
+        <label for='discover'>
+          <legend>How did you discover F1?</legend>
+          <label for='discover'>
+            <input id='discover' type='radio' name='radio' class='inline' value="Social Media" checked/>
+            Social Media
+          </label>
+          <label for='discover'>
+            <input id='discover' type='radio' name='radio' class='inline' value="Friends/Family"/>
+            Friends/Family
+          </label>
+          <label for='discover'>
+            <input id='discover' type='radio' name='radio' class='inline' value="Other (specify)"/>
+            Other (specify)
+          </label>
+          <label class='dropdown'>
+          How long have you watched F1?
+          <select id='dropdown' required>
+            <option value=''>Select one</option>
+            <option value='1'>New to Formula 1</option>
+            <option value='2'>1-5 Seasons</option>
+            <option value='3'>6 or More Seasons</option>
+          </select>
+        </label>
+          </fieldset>
+          <fieldset>
+          <label for='driver' class='label'>
+            Who's your favorite driver? (any season)
+            <input id='driver' type='text' placeholder='Ayrton Senna'/>
+          </label>
+          <label for='driver-reason' class='label'>
+            Why do you like this driver?
+            <textarea id='driver-reason' rows='5' cols='30' placeholder=" I like them because they're very skilled..."></textarea>
+      </fieldset>
+      <fieldset>
+        <label>What do you like about F1? (choose all that apply)</label>
+        <label><input type='checkbox' value='1' id='like'/> Speed</label>
+        <label><input type='checkbox' value='2' id='like'/> Action</label>
+        <label><input type='checkbox' value='3' id='like'/> Drivers</label>
+        <label><input type='checkbox' value='4' id='like'/> Teams</label>
+        <label><input type='checkbox' value='5' id='like'/> Rivalries</label>
+        <label><input type='checkbox' value='6' id='like'/> Drama</label>
+        <label><input type='checkbox' value='7' id='like'/> Tracks</label>
+        <label><input type='checkbox' value='8' id='like'/> Rules</label>
+        <label id='change'>
+          If it were up to you, what would you change about F1?
+          <textarea class='change' rows='5' cols='30' placeholder=' I would give only warnings on drivers that cause minor collisions...'></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type='submit' value='Submit'/>
+    </form>
+  </body>
+</html>
